@@ -1,6 +1,9 @@
 <script>
-  let path = location.pathname;
-  localStorage.setItem("path", path.replace("/85days", ""));
+  let path = location.href;
+  localStorage.setItem(
+    "path",
+    path.replace("https://apars.tech/85days/85days", "")
+  );
 
   window.location.href = "https://apars.tech/85days/";
 </script>
